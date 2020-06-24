@@ -117,11 +117,11 @@ void ble_scan(void *arg)
 {
   while (1)
   {
-    BLEScan *pble_scan = BLEDevice::getScan();
-    pble_scan->setActiveScan(false);
+    BLEScan *pBLEScan = BLEDevice::getScan();
+    pBLEScan->setActiveScan(false);
 
     Serial.println("Scan start.");
-    BLEScanResults scanResult = pble_scan->start(3);
+    BLEScanResults scanResult = pBLEScan->start(3);
     for (int i = 0; i < scanResult.getCount(); i++)
     {
       BLEAdvertisedDevice device = scanResult.getDevice(i);
