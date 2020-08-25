@@ -25,8 +25,8 @@ monitor_speed = 115200
 config.h でデバイス名と企業 ID を定義しています。センサーデバイスの識別は企業 ID で行っています。
 
 ```cpp
-#define BLE_DEVICE_NAME "HotoriLight" // Device name
-#define BLE_COMPANY_ID 0xffff         // Company ID
+#define BLE_DEVICE_NAME "Hotori" // Device name
+#define BLE_COMPANY_ID 0xffff    // Company ID
 ```
 
 ## Color Pallet
@@ -36,13 +36,16 @@ config.h でデバイス名と企業 ID を定義しています。センサー�
 ```cpp
 RTC_DATA_ATTR static int colorIndex;
 CRGB colors[] = {
-    CRGB::White,
-    CRGB::Red,
-    CRGB::Yellow,
-    CRGB::Green,
-    CRGB::Cyan,
-    CRGB::Blue,
-    CRGB::Magenta,
+    0x1f77b4, // tab:blue
+    0xff7f0e, // tab:orange
+    0x2ca02c, // tab:green
+    0xd62728, // tab:red
+    0x9467bd, // tab:purple
+    0x8c564b, // tab:brown
+    0xe377c2, // tab:pink
+    0x7f7f7f, // tab:gray
+    0xbcbd22, // tab:olive
+    0x17becf, // tab:cyan
 };
 ```
 
