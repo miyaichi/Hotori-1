@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "Light"
+		},
+		{
+			"path": "Sensor"
+		},
+		{
+			"name": "Hotori-1",
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"array": "cpp",
+			"string": "cpp"
+		}
+	}
+}
